@@ -11,7 +11,7 @@ export interface StockQuote {
   volume: number;
 }
 
-const API_KEY = '3a5e1ff11de9499c8417ac7d3d93a1c9'; 
+const API_KEY = import.meta.env.VITE_TWELVE_DATA_API_KEY; 
 
 export async function getStockQuote(query: string): Promise<StockQuote | null> {
   try {
