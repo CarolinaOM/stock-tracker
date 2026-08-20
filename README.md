@@ -1,75 +1,39 @@
-# React + TypeScript + Vite
+# 📈 Stock Tracker | Aplicación Web de Seguimiento Financiero
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Stock Tracker** Aplicación web moderna y dinámica diseñada para consultar cotizaciones y datos financieros del mercado de valores en tiempo real. La app conecta una interfaz rápida con APIs financieras y Supabase para ofrecer una buena experiencia.
 
-Currently, two official plugins are available:
+## 🌐 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Sitio Web:** [https://stock-tracke-app.netlify.app/](https://stock-tracke-app.netlify.app/)
 
-## React Compiler
+![Vista previa de la app](./src/assets/proyecto.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Sobre el Proyecto
 
-## Expanding the ESLint configuration
+Desarrollé este proyecto con el objetivo de crear una herramienta eficiente para la consulta rápida de datos. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Qué puede hacer la aplicación
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Búsqueda de activos en tiempo real:** Consulta cotizaciones actualizadas al instante mediante.
+* **Métricas financieras detalladas:** Visualización de precios, cambios, porcentajes, máximos, mínimos y volúmenes de negociación.
+* **Gestión de datos con Supabase:** Estructuración y soporte de base de datos para almacenar configuraciones o información relevante del sistema.
+* **Diseño adaptativo (Responsive):** Interfaz moderna, limpia y optimizada tanto para dispositivos móviles como para ordenadores.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologías Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **Frontend:** React + TypeScript
+* **Empaquetador:** Vite
+* **Estilos:** Tailwind CSS
+* **Base de Datos y Backend:** Supabase
+* **Datos Financieros:** Twelve Data API
+* **Hosting y Despliegue:** Netlify
+* **Control de Versiones:** Git & GitHub
 
-```
+## 💻 Instalación y Uso Local
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Si quieres clonar y probar el proyecto en tu máquina local, sigue estos pasos:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. **Clona el repositorio:**
+   ```bash
+   git clone [https://github.com/TU_USUARIO/stock-tracker.git](https://github.com/TU_USUARIO/stock-tracker.git)
+   cd stock-tracker
